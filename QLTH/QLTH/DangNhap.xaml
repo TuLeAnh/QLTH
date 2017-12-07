@@ -1,0 +1,31 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="QLTH.DangNhap"
+        Title="Đăng nhập" Loaded="Window_Loaded" KeyDown="Window_KeyDown" WindowState="Maximized" Background="#FFADD5F7" Width="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenWidthKey}}" Height="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenHeightKey}}" Icon="school.png">
+
+    <Grid Margin="0,10,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FF7FB2F0" Margin="444,115,444,142.5" RadiusY="62" RadiusX="62"/>
+
+        <TextBox x:Name="tenDN" Margin="600,0,600,292.871" TextWrapping="Wrap" FontSize="24" VerticalAlignment="Bottom" Text="Tên đăng nhập" IsHitTestVisible="True" FontStyle="Italic" GotFocus="tenDN_GotFocus" Height="39.6">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <PasswordBox x:Name="matKhau" Margin="600,0,600,240" FontSize="20" Password="********" GotFocus="matKhau_GotFocus" Height="40" VerticalAlignment="Bottom" />
+        <Button Content="Đăng nhập " Margin="600,0,600,179" FontSize="16" Click="Button_Click" Height="35" VerticalAlignment="Bottom" BorderBrush="White" Foreground="White" Background="#FF4E7AC7"/>
+        <TextBlock x:Name="txtHeader" Margin="500,273.273,500,357.727" TextWrapping="Wrap" Text="Quản lý Trường học" Foreground="White" FontSize="48" Height="72" HorizontalAlignment="Center"/>
+        <Image x:Name="image" Height="134.273" Margin="600,139,600,0" VerticalAlignment="Top" Source="icon/school.png" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="41" Margin="10,0,0,10" TextWrapping="Wrap" Text="Nhóm tác giả: TSN - KTPM2014 - UIT" VerticalAlignment="Bottom" Width="356" Foreground="White" FontSize="16"/>
+
+    </Grid>
+
+
+
+</Window>
